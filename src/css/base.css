@@ -1,0 +1,75 @@
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+    /* 默认有边距，都要清除 */
+    margin: 0;
+    padding: 0;
+    /*字体设置*/
+    font-size: 16px;
+    font-family: "Microsoft Yahei", sans-serif;
+    /* 去掉列表的原点 */
+    list-style: none;
+    font-weight: normal;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+input,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+    vertical-align: bottom;
+}
+
+a {
+    /*下划线和颜色*/
+    text-decoration: none;
+    color: #000;
+}
+
+i,
+em {
+    /*文字样式*/
+    font-style: normal;
+}
+
+/* 使用伪元素清除浮动 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: none;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}

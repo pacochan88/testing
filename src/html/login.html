@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <title>登 录</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/iconfont/iconfont.css">
+</head>
+
+<body>
+    <div id="login">
+        <div class="header">
+            <div class="header-box">
+                <h1 class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" alt="">
+                    </a>
+                </h1>
+                <div class="remind">
+                    <p>为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！</p>
+                </div>
+                <div class="regBtn">
+                    <a href="reg.html">注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- 主体 -->
+        <div class="login-layout clearfix">
+            <div class="login-box">
+                <div class="login-mode">
+                    <ul class="login-nav">
+                        <li><a href="###" class="page1 active">
+                                用户登录
+                                <i class="a1"></i>
+                            </a>
+                        </li>
+                        <li><a href="###" class="page2">
+                                手机验证码登录
+                                <i></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="login-contents height1">
+                        <div class="content showflip" id="default">
+                            <form action="" method="post" autocomplete="off" class="login-form">
+                                <dl>
+                                    <dt>账&nbsp;&nbsp;&nbsp;号：</dt>
+                                    <dd><input type="text" name="" id="user" class="text" value="用户名/邮箱/已验证手机">
+                                        <label for="" class="error">
+                                            <i title="请输入验证码" class="iconfont icon-gantanhao"></i>
+                                        </label></dd>
+                                </dl>
+                                <dl>
+                                    <dt>密&nbsp;&nbsp;&nbsp;码：</dt>
+                                    <dd><input type="text" name="" id="pwd" class="text" value="6-20个大小写英文字母、符号或数字">
+                                    </dd>
+                                </dl>
+                                <div class="code">
+                                    <dl>
+                                        <dt>验证码：</dt>
+                                        <dd><input type="text" name="" id="code1" class="text" value="输入验证码">
+                                            <label for="" class="error">
+                                                <i title="请输入验证码" class="iconfont icon-chahao"></i>
+                                            </label>
+                                        </dd>
+                                    </dl>
+                                    <span>
+                                        <div id="codeimage1"></div>
+                                        <a href="javascript:void(0);" class="make_code1">看不清，换一张</a>
+                                    </span>
+                                </div>
+                                <div class="handle">
+                                    <span>
+                                        <input type="checkbox" name="auto_login" class="checkbox">
+                                        七天自动登录
+                                        <em>请勿在公用电脑上使用</em>
+                                    </span>
+                                    <a href="###">忘记密码？</a>
+                                </div>
+                                <div class="submit-div">
+                                    <input type="button" class="submit btn1" value="登&nbsp;&nbsp;&nbsp;录">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="content hideflip" id="mobile">
+                            <form action="" method="post" autocomplete="off" class="login-form posts">
+                                <dl>
+                                    <dt>手机号：</dt>
+                                    <dd>
+                                        <input type="text" name="" id="tel" class="text" value="可填写已注册的手机号接收短信">
+                                        <label for="" class="error">
+                                            <i class="iconfont icon-gantanhao"></i>
+                                            请输入正确的手机号
+                                        </label>
+                                    </dd>
+                                </dl>
+                                <div class="code">
+                                    <dl>
+                                        <dt>验证码：</dt>
+                                        <dd><input type="text" name="" id="code2" class="text" value="输入验证码">
+                                            <label for="" class="error">
+                                                <i title="请输入验证码" class="iconfont icon-chahao"></i>
+                                            </label>
+                                        </dd>
+                                    </dl>
+                                    <span>
+                                        <div id="codeimage2"></div>
+                                        <a href="javascript:void(0);" class="make_code2">看不清，换一张</a>
+                                    </span>
+                                </div>
+                                <div class="tip">
+                                    正确输入上方验证码后，点击
+                                    <span>
+                                        <a href="javascript:void(0);" class="send_code">发送短信验证</a>
+                                    </span>
+                                    ，查收短信将系统发送的“6位手机验证码”输入到下方验证后登录。
+                                </div>
+                                <div class="tip-text">短信验证码已发出</div>
+                                <dl>
+                                    <dt>验证码：</dt>
+                                    <dd>
+                                        <input type="text" class="text" id="sms" value="输入6位手机验证码">
+                                        <label for="" class="error">
+                                            <i class="iconfont icon-gantanhao"></i>
+                                            请输入六位短信验证码
+                                        </label>
+                                    </dd>
+                                </dl>
+                                <div class="submit-box">
+                                    <input type="button" value="登&nbsp;&nbsp;&nbsp;录" class="submit btn2">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-api">
+                    <h4>您可以用合作伙伴账号登录：</h4>
+                    <a href="###" title="QQ账号登录" class="qq">
+                        <i></i>
+                        QQ
+                    </a>
+                    <a href="###" title="新浪微博账号登录" class="sina">
+                        <i></i>
+                        新浪微博
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <!-- 尾部 -->
+        <div class="foot">
+            <div class="foot_logo">
+                <div class="w">
+                    <img src="../img/nsgfoot_bz.png" alt="">
+                </div>
+            </div>
+            <div class="foot_info">
+                <div class="info-box">
+                    <div class="box_left">
+                        <div class="app-code"></div>
+                        <p>男士购客服</p>
+                        <p>添加微信号</p>
+                    </div>
+                    <div class="box_center">
+                        <ul>
+                            <li>
+                                <h3>新手指南</h3>
+                                <a href="###">找回密码</a>
+                                <a href="###">注册账号</a>
+                                <a href="###">交易条款</a>
+                            </li>
+                            <li>
+                                <h3>支付配送</h3>
+                                <a href="###">网上支付</a>
+                                <a href="###">配送运费</a>
+                                <a href="###">配送方式</a>
+                            </li>
+                            <li>
+                                <h3>售后服务</h3>
+                                <a href="###">售后政策</a>
+                                <a href="###">售后流程</a>
+                                <a href="###">售后申请</a>
+                            </li>
+                            <li>
+                                <h3>关于我们</h3>
+                                <a href="###">公司介绍</a>
+                                <a href="###">隐私声明</a>
+                                <a href="###">招贤纳士</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box_right">
+                        <div class="contact-us">
+                            <h3>联系我们</h3>
+                            <p>客服微信：gebuzaishuai</p>
+                            <p>工作日：9:00-20:00</p>
+                            <div class="feedback">意见反馈</div>
+                        </div>
+                        <div class="about">
+                            <h3>关注我们</h3>
+                            <div class="wechat" title="男士购微信"></div>
+                            <div class="weibo" title="男士购微博"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_remark">
+                <p class="link">
+                    <a href="###">友情链接：</a>
+                </p>
+                <p class="copyright">
+                    Copyright © 2010-2018 男士购 版权所有
+                    <a href="###">桂ICP备15008077号-1</a>
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- ?弹窗 -->
+    <div class="pop-up pop1">
+        <p class="info">
+            错误信息
+            <!-- <em>X</em> -->
+        </p>
+        <div>
+            <i class="iconfont icon-chahao"></i>
+            登录失败，资料不正确。
+        </div>
+        <p class="countdown countdown1">5秒后窗口关闭</p>
+    </div>
+    <div class="pop-up pop2">
+        <p class="info">
+            温馨提示
+        </p>
+        <div>
+            <i class="iconfont icon-dagouyouquan"></i>
+            登录成功
+        </div>
+        <p class="countdown countdown2">3秒后窗口关闭,自动跳转到首页</p>
+    </div>
+</body>
+
+<script src="../lib/jquery-1.7.2.min.js"></script>
+<script src="../lib/gVerify.js"></script>
+<script src="../js/my_comm.js"></script>
+<script src="../js/login.js"></script>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <title>订单页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+
+    <div id="carts">
+        <div class="page-explain">
+            <div class="wrapper">
+                您好，欢迎来到潮男购物网站！
+                <!-- *引导栏 已登录 -->
+                <div class="page-login-link">
+                    您好
+                    <a href="javascript:void(0);" class="login-name"></a>
+                    <div class="mini-icon">V0</div>
+                    <a href="cart.html" class="order-page">我的订单</a>
+                    <a href="javascript:void(0);">待付款订单</a>
+                    <a href="javascript:void(0);">待确认收货</a>
+                    <a href="javascript:void(0);">待评价交易</a>
+                    <a href="javascript:void(0);">我的收藏</a>
+                    <a href="javascript:void(0);" class="quit">[退出]</a>
+                </div>
+            </div>
+        </div>
+        <div class="cart-header">
+            <div class="site-logo">
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+            </div>
+            <ul class="order-flow">
+                <li class="current"><i class="step1"></i>
+                    <p>我的购物车</p>
+                    <sub></sub>
+                    <div class="hr"></div>
+                </li>
+                <li class=""><i class="step2"></i>
+                    <p>填写核对购物信息</p>
+                    <sub></sub>
+                    <div class="hr"></div>
+                </li>
+                <li class=""><i class="step3"></i>
+                    <p>支付提交</p>
+                    <sub></sub>
+                    <div class="hr"></div>
+                </li>
+                <li class=""><i class="step4"></i>
+                    <p>订单完成</p>
+                    <sub></sub>
+                    <div class="hr"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="order-layout">
+            <div class="order-main">
+                <div class="order-title">
+                    <h3>我的购物车</h3>
+                    <h5>查看购物车商品清单，增加减少商品数量，并勾选想要的商品进入下一步操作。</h5>
+                </div>
+                <!-- ?默认没有数据的时候 -->
+                <div class="null-shopping">
+                    <div class="no-shopping-box">
+                        <i class="ico"></i>
+                        <h4>您的购物车还没有商品</h4>
+                        <p>
+                            <a href="list.html" class="btn-mini mr10">马上去购物</a>
+                            <a href="###" class="btn-mini">查看自己的订单</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- *渲染区 -->
+                <div class="have-goods">
+                    <div class="cartMain">
+                        <ul>
+                            <li class="list_chk">
+                                <input type="checkbox" id="all" class="whole_check">
+                                <label for="all" class=""></label>
+                                全选
+                            </li>
+                            <li class="list_con">商品</li>
+                            <li class="list_price">单价(元)</li>
+                            <li class="list_amount">数量</li>
+                            <li class="list_sum">小计(元)</li>
+                            <li class="list_op">操作</li>
+                        </ul>
+                    </div>
+
+                    <!-- !真实渲染区 -->
+                    <!-- 每个店铺的板块 -->
+                    <div id="goods-box">
+                        <!-- <div class="cartBox">
+                                    <div class="shop_info">
+                                        <div class="all_check">
+            
+                                            <input type="checkbox" id="" class="shopChoice">
+                                            <label for="" class="shop"></label>
+                                        </div>
+                                        <div class="shop_name">
+                                            店铺：<a href="javascript:;">!!!!!</a>
+                                        </div>
+                                    </div>
+                                    <div class="order_content">
+                                        <ul class="order_lists">
+                                            <li class="list_chk">
+                                                <input type="checkbox" id="" class="son_check">
+                                                <label for=""></label>
+                                            </li>
+                                            <li class="list_con">
+                                                <div class="list_img"><a href="javascript:;"><img
+                                                            src="https://www.nanshig.com/data/upload/shop/store/goods/45/45_05923385552023978_60.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                                <div class="list_text"><a href="javascript:;">!!!!!</a>
+                                                </div>
+                                            </li>
+                                            <li class="list_price">
+                                                <p class="price">!!!!!</p>
+                                            </li>
+                                            <li class="list_amount">
+                                                <div class="amount_box">
+                                                    <a href="javascript:;" class="reduce">-</a>
+                                                    <input type="text" value="1" class="sum">
+                                                    <a href="javascript:;" class="plus">+</a>
+                                                </div>
+                                            </li>
+                                            <li class="list_sum">
+                                                <p class="sum_price">!!!!!</p>
+                                            </li>
+                                            <li class="list_op">
+                                                <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="shop_subtotal">
+                                        <div class="store-account">
+                                            <dl>
+                                                <dt>店铺合计：</dt>
+                                                <dd><em>0</em>元</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                    </div>
+
+
+
+                    <!-- 全部的总计 -->
+                    <div class="settlement">
+                        <div class="all-account">
+                            商品总价（不含运费）
+                            <em id="cartTotal">!!!!!</em>元
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-step">
+                    <a href="javascript:void(0)" class="blue-btn">
+                        <i></i>
+                        下一步，填写核对购物信息
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 尾部 -->
+        <div class="foot">
+            <div class="foot_logo">
+                <div class="w">
+                    <img src="../img/nsgfoot_bz.png" alt="">
+                </div>
+            </div>
+            <div class="foot_info">
+                <div class="info-box">
+                    <div class="box_left">
+                        <div class="app-code"></div>
+                        <p>男士购客服</p>
+                        <p>添加微信号</p>
+                    </div>
+                    <div class="box_center">
+                        <ul>
+                            <li>
+                                <h3>新手指南</h3>
+                                <a href="###">找回密码</a>
+                                <a href="###">注册账号</a>
+                                <a href="###">交易条款</a>
+                            </li>
+                            <li>
+                                <h3>支付配送</h3>
+                                <a href="###">网上支付</a>
+                                <a href="###">配送运费</a>
+                                <a href="###">配送方式</a>
+                            </li>
+                            <li>
+                                <h3>售后服务</h3>
+                                <a href="###">售后政策</a>
+                                <a href="###">售后流程</a>
+                                <a href="###">售后申请</a>
+                            </li>
+                            <li>
+                                <h3>关于我们</h3>
+                                <a href="###">公司介绍</a>
+                                <a href="###">隐私声明</a>
+                                <a href="###">招贤纳士</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box_right">
+                        <div class="contact-us">
+                            <h3>联系我们</h3>
+                            <p>客服微信：gebuzaishuai</p>
+                            <p>工作日：9:00-20:00</p>
+                            <div class="feedback">意见反馈</div>
+                        </div>
+                        <div class="about">
+                            <h3>关注我们</h3>
+                            <div class="wechat" title="男士购微信"></div>
+                            <div class="weibo" title="男士购微博"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_remark">
+                <p class="link">
+                    <a href="###">友情链接：</a>
+                </p>
+                <p class="copyright">
+                    Copyright © 2010-2018 男士购 版权所有
+                    <a href="###">桂ICP备15008077号-1</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="delWindow">
+        <h3 class="del_head">
+            <span class="del_title">
+                <span class="title_icon">提示信息</span>
+            </span>
+            <span class="close_btn" title="关闭">X</span>
+        </h3>
+        <div class="eject_con">
+            <div class="del_message">
+                <i class="iconfont icon-gantanhao"></i>
+                确认删除吗?
+            </div>
+        </div>
+        <div class="del_buttons_bar">
+            <a href="javascript:void(0);" id="sure">确定</a>
+            <a href=" javascript:void(0);" id="cancel">取消</a>
+        </div>
+    </div>
+</body>
+
+<!-- <script src="../lib/jquery-1.7.2.min.js"></script>
+<script src="../js/my_comm.js"></script>
+<script src="../js/cart.js"></script> -->
+
+<script src="../js/require.js" data-main="../js/main-c.js"></script>
+
+</html>

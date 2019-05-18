@@ -1,0 +1,279 @@
+body {
+    background-color: #fafafa;
+}
+
+/* 注册部分 */
+.register_bg {
+    height: 680px;
+    overflow: hidden;
+}
+
+.register-box {
+    width: 860px;
+    height: 560px;
+    padding: 10px;
+    margin: 60px auto;
+}
+
+.layout {
+    background-color: #FFF;
+    display: block;
+    width: 820px;
+    height: 520px;
+    padding: 19px;
+    border: solid 1px #CCC;
+    overflow: hidden;
+}
+
+/* 注册左 */
+.left {
+    width: 580px;
+    height: 520px;
+    float: left;
+    margin-right: 20px;
+}
+
+.left h3 a {
+    color: #2f97f0;
+    display: block;
+    border-bottom: 3px solid #2f97f0;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+}
+
+.left h3 a i {
+    border-color: #2f97f0 transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    border-width: 7px;
+    width: 0;
+    height: 0;
+    margin-left: -4px;
+    position: absolute;
+    left: 50%;
+    bottom: -17px;
+}
+
+.reg_operate {
+    padding: 50px 80px 0 100px;
+}
+
+
+
+/* 注册第一步 */
+/* .reg_form {
+    display: none;
+} */
+
+.reg_form dl {
+    background-color: #FFF;
+    width: 398px;
+    height: 52px;
+    margin-top: -1px;
+    border: solid 1px #E6E6E6;
+    position: relative;
+}
+
+
+
+.code {
+    width: 100%;
+    height: 54px;
+}
+
+/* 检验手机号是否登记了 */
+.reg_form .success {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: green;
+}
+
+.reg_form .code dl {
+    width: 277px;
+    float: left;
+}
+
+.reg_form .code .one {
+    width: 100px;
+}
+
+
+
+
+
+
+.reg_form dl dt {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    width: 72px;
+    padding: 16px 0 16px 20px;
+    float: left;
+}
+
+.reg_form dl dd {
+    height: 28px;
+    float: left;
+    padding: 12px 0;
+}
+
+.submit {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #2f97f0;
+    width: 398px;
+    height: 42px;
+    border: solid 1px #2f97f0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------- */
+/* 注册第二部 */
+/* 默认先隐藏 */
+#sms_form {
+    display: none;
+}
+
+.reg_form dl .text2 {
+    color: #000;
+}
+
+.reg_operate .reg_form .two {
+    width: 150px;
+}
+
+.reg_form .agree dd {
+    font-size: 14px;
+    padding: 0;
+    height: auto;
+}
+
+.reg_form .agree {
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+    width: 400px;
+    height: 30px;
+    margin-top: 15px;
+    border: none 0;
+}
+
+.agree a:hover {
+    color: #2f97f0;
+    text-decoration: underline;
+}
+
+.agree .checkbox {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.agree .error {
+    top: -5px;
+    right: 50px;
+}
+
+.reg_form dl .note {
+    font-size: 12px;
+    color: #CCC;
+    line-height: 16px;
+    width: 145px;
+    height: 32px;
+    position: absolute;
+    top: 10px;
+    left: 245px;
+}
+
+/* 注册右 */
+.right {
+    width: 200px;
+    height: 500px;
+    float: right;
+    padding: 20px 0 0 19px;
+    border-left: solid 1px #E6E6E6;
+}
+
+.right h4 {
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.app_login {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: dashed 1px #E6E6E6;
+}
+
+.app_login a {
+    display: inline-block;
+    /* width: 42px; */
+    margin-left: 12px;
+}
+
+.app_login a i {
+    background: url(img/login_pic.png) no-repeat;
+    display: block;
+    width: 42px;
+    height: 42px;
+}
+
+.app_login .qq i {
+    background-position: -126px -32px;
+}
+
+.app_login .sina i {
+    background-position: -168px -32px;
+}
+
+.reg_after li {
+    color: #999;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+    font-size: 12px;
+}
+
+.reg_after i {
+    background: url(img/login_pic.png) no-repeat;
+    vertical-align: middle;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.reg_after li:nth-child(1) i {
+    background-position: 0 -76px;
+}
+
+.reg_after li:nth-child(2) i {
+    background-position: -30px -76px;
+}
+
+.reg_after li:nth-child(3) i {
+    background-position: -60px -76px;
+}
+
+.reg_after li:nth-child(4) i {
+    background-position: -90px -76px;
+}
+
+.reg_after li:nth-child(5) i {
+    background-position: -120px -76px;
+}
+
+.reg_after li:nth-child(6) i {
+    background-position: -150px -76px;
+}
+
+/* --------------------------------------------------------------- */
+
