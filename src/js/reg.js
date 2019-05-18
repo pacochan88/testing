@@ -198,7 +198,7 @@ $(function () {
                 on_off1 = false;
                 $(this).next().show().html('<i class="iconfont icon-gantanhao"></i>用户名必须在3-15个字符之间(英文字母开头)');
             } else {
-                $(this).next().css('display', 'none');
+                $(this).next().css('display', 'none');  
                 $.ajax({
                     type: 'post',
                     url: '../api/verify.php',
