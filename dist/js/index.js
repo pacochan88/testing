@@ -41,7 +41,7 @@ $(function () {
         //     prevEl: '.swiper-button-prev',
         // },
     });
-    console.log(swiper);
+    // console.log(swiper);
 
     // 滑动到临界值就显示吸顶菜单
     $(window).on('scroll', function () {
