@@ -1,0 +1,762 @@
+.product {
+    width: 1200px;
+    margin: 0 auto;
+
+    div {
+
+        // *小图部分 
+        .recommend {
+            width: 1200px;
+
+            .box {
+                border: solid 1px #D7D7D7;
+                border-top: solid 2px #2f97f0;
+                margin-bottom: 10px;
+
+                .title {
+                    background-color: #F5F5F5;
+                    height: 36px;
+
+                    h3 {
+                        font-size: 14px;
+                        color: #333;
+                        height: 20px;
+                        padding: 8px 10px;
+                    }
+                }
+
+                .content {
+                    overflow: hidden;
+
+                    ul {
+                        display: block;
+                        overflow: hidden;
+
+                        li {
+                            float: left;
+                            width: 230px;
+                            padding: 7px;
+
+                            div {
+                                width: 90px;
+                                height: 90px;
+                                float: left;
+                                margin: 0;
+
+                                a {
+                                    line-height: 0;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                    display: table-cell;
+                                    width: 90px;
+                                    height: 90px;
+                                    overflow: hidden;
+
+                                    img {
+                                        max-width: 90px;
+                                        max-height: 90px;
+                                    }
+                                }
+                            }
+
+                            dl {
+                                width: 130px;
+                                float: right;
+                                margin: 0;
+
+                                dt {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    width: 100%;
+                                    height: 32px;
+                                    overflow: hidden;
+
+                                    a {
+                                        color: #777;
+
+                                        &:hover {
+                                            color: #333;
+                                        }
+                                    }
+
+                                }
+
+                                dd {
+
+
+                                    em {
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        color: #ff3c00;
+                                    }
+
+                                    a {
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                        color: #FFF;
+                                        background-color: #ff3c00;
+                                        height: 20px;
+                                        display: inline-block;
+                                        padding: 3px 12px;
+                                        border-radius: 2px;
+
+                                        &:hover {
+                                            text-decoration: none;
+                                            background-color: #04AFC8;
+                                        }
+                                    }
+
+                                }
+
+                                .price {
+                                    font-size: 12px;
+                                    color: #555;
+                                    line-height: 20px;
+                                    white-space: nowrap;
+                                    height: 20px;
+                                    margin: 5px 0;
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 商品及搜索栏 
+        .show {
+            .show-bar {
+                z-index: 30;
+                background: #F7F7F7;
+                display: block;
+                height: 36px;
+                border: solid 1px #D7D7D7;
+
+                .category {
+                    vertical-align: top;
+                    display: none;
+                    width: 210px;
+                    height: 37px;
+
+                    .sub-cate {
+                        background-color: transparent;
+                        display: block;
+                        width: 212px;
+                        height: 38px;
+                        float: left;
+
+                        .title {
+                            line-height: 20px;
+                            height: 20px;
+                            padding: 8px 8px 9px 8px;
+
+                            i {
+                                border-color: #2f97f0 transparent transparent;
+                                border-style: solid dashed dashed;
+                                border-width: 5px;
+                                float: right;
+                                font-size: 0;
+                                height: 0;
+                                line-height: 0;
+                                margin: 8px 4px 0 0;
+                                width: 0;
+                            }
+
+                            h3 {
+                                a {
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    color: #2f97f0;
+                                    float: left;
+                                    margin-left: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .sort {
+                    font-size: 12px;
+                    color: #777;
+                    vertical-align: top;
+                    display: inline-block;
+                    padding: 0 0 0 10px;
+
+                    ul {
+                        display: inline-block;
+                        font-size: 0;
+                        border-right: solid 1px #E6E6E6;
+
+                        li {
+
+                            font-size: 12px;
+                            display: inline-block;
+                            border-left: solid 1px #E6E6E6;
+
+                            &:hover {
+                                background-color: #FFF;
+
+                                a {
+                                    color: #2f97f0;
+                                    text-decoration: none;
+
+                                    i {
+                                        background-position: -7px -11px;
+                                    }
+                                }
+                            }
+
+                            a {
+                                line-height: 20px;
+                                color: #555;
+                                display: block;
+                                height: 20px;
+                                padding: 8px 13px 8px 12px;
+
+                                i {
+                                    background: url(img/2014shop_background_img.png) no-repeat 0 -11px;
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                    width: 7px;
+                                    height: 8px;
+                                    margin-left: 4px;
+                                }
+                            }
+
+                            div {
+                                line-height: 34px;
+                                padding-left: 12px;
+                                padding-right: 13px;
+
+                                input {
+                                    width: 38px;
+                                    padding: 1px;
+                                    border: 1px solid #D7D7D7;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                }
+
+                                em {
+                                    line-height: 24px;
+                                    padding: 0 3px;
+                                    color: #CCC;
+                                }
+
+                                a {
+                                    height: 20px;
+                                    line-height: 20px;
+                                    color: #555;
+                                    margin-left: 5px;
+                                    display: inline;
+                                    padding: 3px 10px 2px;
+                                    border: 1px solid #D7D7D7;
+
+                                    &:hover {
+                                        text-decoration: none;
+                                        box-shadow: 0 1px 1px rgba(0, 1, 1, .08);
+                                        cursor: pointer;
+                                        color: #555;
+                                    }
+                                }
+                            }
+                        }
+
+                        .selected {
+                            background-color: #FFF;
+
+                            a {
+                                text-decoration: none;
+                                color: #2f97f0;
+                            }
+                        }
+                    }
+                }
+
+                .owner {
+                    color: #777;
+                    vertical-align: top;
+                    display: inline-block;
+                    padding: 0 0 0 5px;
+
+                    span {
+                        vertical-align: middle;
+                        display: inline-block;
+
+                        a {
+                            font-size: 12px;
+                            color: #777;
+                            display: block;
+                            height: 20px;
+                            padding: 8px 8px 8px 4px;
+
+                            i {
+                                background: url(img/2014shop_background_img.png) no-repeat -44px 0;
+                                vertical-align: middle;
+                                display: inline-block;
+                                width: 12px;
+                                height: 12px;
+                                margin-right: 4px;
+                            }
+
+                            &:hover {
+                                color: #2f97f0;
+                                text-decoration: none;
+
+                                i {
+                                    background: url(img/2014shop_background_img.png) no-repeat -56px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .location {
+                    color: #777;
+                    vertical-align: top;
+                    display: inline-block;
+                    *display: inline;
+                    padding: 0 0 0 70px;
+                    font-size: 12px;
+
+                    // todo 未完成
+                    .layer {
+                        background-color: #FFF;
+                        border: solid 1px #D6D6D6;
+                        display: inline-block;
+                        margin: 8px 6px 8px 0;
+                        position: relative;
+
+                        .holder {
+                            background-color: #FFF;
+
+                            em {
+                                font-size: 12px;
+                                line-height: 16px;
+                                white-space: nowrap;
+                                display: block;
+                                padding: 2px 16px 2px 4px;
+                            }
+                        }
+
+                        i {
+                            font-size: 0;
+                            line-height: 0;
+                            width: 0;
+                            height: 0;
+                            border: 4px solid;
+                            border-color: #666 #F7F7F7 #F7F7F7 #F7F7F7;
+                            transition: .2s ease-in;
+                            position: absolute;
+                            top: 7px;
+                            right: 5px;
+                        }
+
+                        .options {
+                            background-color: #FFF;
+                            white-space: nowrap;
+                            display: none;
+                            border: solid #ABABAB 1px;
+                            position: absolute;
+                            z-index: 1;
+                            top: 22px;
+                            left: -150px;
+                            box-shadow: 2px 2px 0 rgba(102, 102, 102, 0.3);
+                        }
+                    }
+                }
+
+                .pagination {
+                    display: inline-block;
+                    float: right;
+                    padding: 0;
+                    text-align: center;
+                    margin: 7px 5px 0 0;
+
+                    ul {
+                        li {
+                            display: inline-block;
+                            margin: 0 2px;
+
+                            a {
+                                span {
+                                    font-size: 12px;
+                                    color: #AAA;
+                                    background-color: #FAFAFA;
+                                    text-align: center;
+                                    display: block;
+                                    min-width: 16px;
+                                    padding: 2px 6px;
+                                    border: 1px solid #E6E6E6;
+                                    position: relative;
+                                }
+
+                                &:hover {
+                                    color: #2f97f0;
+                                    text-decoration: none;
+
+                                    span {
+                                        color: #FFF;
+                                        text-decoration: none;
+                                        background-color: #2f97f0;
+                                        border-color: #CA3300;
+                                        position: relative;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+
+            // !商品列表样式
+            .g-list {
+                .list-img {
+                    font-size: 0;
+                    display: block;
+                    width: 1200px;
+                    margin-left: -16px;
+
+                    li {
+                        font-size: 12px;
+                        vertical-align: middle;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        display: inline-block;
+                        width: 288px;
+                        height: 375px;
+                        margin: 12px 0 0 12px;
+
+                        &:hover .goods-content {
+                            height: 445px;
+                            margin: 0;
+                            z-index: 20;
+                            border: solid 4px #2f97f0;
+                            border-radius: 0;
+                            box-shadow: 0 4px 4px rgba(102, 102, 102, 0.65);
+
+                            .goods-info {
+                                top: 180px;
+
+                            }
+                        }
+
+
+
+                        .goods-content {
+                            line-height: 18px;
+                            background-color: #FFF;
+                            width: 300px;
+                            height: 370px;
+                            margin: 3px;
+                            border: solid 1px #F0F0F0;
+                            border-radius: 2px;
+                            position: relative;
+                            z-index: 11;
+                            overflow: hidden;
+                            box-shadow: 0 0 3px rgba(153, 153, 153, 0.1);
+                            transition: border-color 0.4s ease-in-out 0s;
+
+                            .goods-img {
+                                background: #FFF;
+                                width: 300px;
+                                height: 220px;
+                                padding: 5px 5px 0 5px;
+                                margin: 0;
+                                z-index: 1;
+                                top: 0;
+                                left: 0;
+
+                                a {
+                                    line-height: 0;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                    display: table-cell;
+                                    width: 280px;
+                                    height: 220px;
+                                    overflow: hidden;
+
+
+                                    img {
+                                        max-width: 280px;
+                                        max-height: 220px
+                                    }
+                                }
+                            }
+
+                            // ?商品下半部分
+                            .goods-info {
+                                width: 300px;
+                                margin: 0;
+                                position: absolute;
+                                z-index: 1;
+                                left: 0;
+                                top: 230px;
+                                transition: all 0.4s ease-in-out 0.15s;
+
+                                .scroll-show {
+                                    background: rgba(255, 255, 255, 0.9);
+                                    width: 260px;
+                                    height: 30px;
+                                    padding: 5px 10px;
+
+                                    ul {
+                                        font-size: 0;
+                                        width: 180px;
+                                        height: 30px;
+
+                                        li {
+                                            display: inline-block;
+                                            width: 30px;
+                                            height: 30px;
+                                            margin: 0 5px 0 0;
+
+                                            a {
+                                                line-height: 0;
+                                                text-align: center;
+                                                display: table-cell;
+                                                width: 28px;
+                                                height: 28px;
+                                                padding: 0;
+                                                border: solid 1px #EEE;
+                                                overflow: hidden;
+
+                                                &:hover {
+                                                    border-color: #2f97f0;
+                                                    transition: border-color 0.4s ease-in-out 0s;
+                                                }
+
+                                                img {
+                                                    vertical-align: middle;
+                                                    max-width: 28px;
+                                                    max-height: 28px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .goods-name {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    color: #999;
+                                    background-color: #FFF;
+                                    height: 32px;
+                                    display: block;
+                                    padding: 0 10px;
+                                    overflow: hidden;
+
+                                    a:hover {
+                                        color: #2f97f0;
+                                    }
+                                }
+
+                                .goods-price {
+                                    font: 12px/20px Arial;
+                                    color: #C00;
+                                    background-color: #FFF;
+                                    white-space: nowrap;
+                                    display: block;
+                                    height: 20px;
+                                    padding: 5px 10px;
+                                    overflow: hidden;
+
+                                    .sale-price {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        max-width: 70px;
+                                        float: left;
+                                        overflow: hidden;
+                                    }
+
+                                    .market-price {
+                                        color: #999;
+                                        text-decoration: line-through;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        max-width: 50px;
+                                        float: left;
+                                        margin-left: 10px;
+                                        overflow: hidden;
+                                    }
+
+                                    .raty {
+                                        font-size: 0;
+                                        line-height: 0;
+                                        float: right;
+
+                                        img {
+                                            display: inline-block;
+                                            width: 16px;
+                                            height: 16px;
+                                            margin: 2px 0;
+                                        }
+                                    }
+                                }
+
+                                .goods-sub {
+                                    height: 24px;
+                                    padding: 5px 10px 10px;
+
+                                    span {
+                                        line-height: 20px;
+                                        color: #999;
+                                        background: rgba(255, 255, 255, 0.9);
+                                        height: 20px;
+                                        float: right;
+                                        padding: 1px 5px;
+                                        margin: 0;
+                                        border: solid 1px #EEE;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .sell-stat {
+                                    width: 212px;
+                                    margin: 0 auto;
+                                    border-top: solid 1px #EEE;
+                                    overflow: hidden;
+
+                                    ul {
+                                        font-size: 0;
+                                        width: 213px;
+                                        margin-left: -1px;
+
+                                        li {
+                                            vertical-align: middle;
+                                            text-align: center;
+                                            display: inline-block;
+                                            width: 60px;
+                                            height: 40px;
+                                            padding: 5px;
+                                            margin: 0;
+                                            border-left: solid 1px #EEE;
+                                            overflow: hidden;
+
+                                            p {
+                                                line-height: 20px;
+                                                color: #999;
+                                                height: 20px;
+                                                font-size: 12px;
+                                            }
+
+                                            a {
+                                                color: #B57C5B;
+                                            }
+
+                                            a.status {
+                                                color: #3388BB;
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                                .store {
+                                    line-height: 20px;
+                                    background-color: #F5F5F5;
+                                    text-align: center;
+                                    display: block;
+                                    height: 20px;
+                                    clear: both;
+                                    padding: 8px 0;
+                                    border-top: solid 1px #EEE;
+
+                                    a:hover {
+                                        color: #2f97f0;
+                                    }
+                                }
+
+                                .add-cart {
+                                    a {
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #fff;
+                                        text-shadow: -2px 0 0 rgba(0, 0, 0, 0.05);
+                                        background-color: #2f97f0;
+                                        text-align: center;
+                                        display: block;
+                                        height: 20px;
+                                        padding: 8px 0;
+
+                                        i {
+                                            font-size: 14px;
+                                            margin-right: 4px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+// 分页区
+
+.paging-area {
+    margin: 20px 0;
+
+    .page-box {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 0;
+
+        a {
+            user-select: none;
+            font: 600 12px/20px Verdana, Tahoma, Arial;
+            color: #555;
+            text-decoration: none;
+            background-color: #FFF;
+            min-width: 20px;
+            padding: 8px;
+            display: inline-block;
+            margin: 0 0 0 -1px;
+            border: 1px solid #E6E6E6;
+
+            &:hover {
+                color: #2f97f0;
+                border-color: #FC6520;
+                cursor: pointer;
+                z-index: 9;
+            }
+        }
+
+        .current {
+            color: #FFF !important;
+            font-weight: bold;
+            background-color: #2f97f0;
+            border-color: #2f97f0 !important;
+        }
+
+        #firstPage {
+            margin-right: 8px;
+        }
+
+        #lastPage {
+            margin-left: 8px;
+        }
+
+        .gray {
+            color: #AAA;
+
+            &:hover {
+                border: 1px solid #E6E6E6;
+                color: #AAA;
+                cursor: not-allowed !important;
+            }
+        }
+    }
+}
